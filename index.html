@@ -840,7 +840,7 @@
             XLSX.utils.book_append_sheet(wb, facilitiesWS, 'Facilities');
             XLSX.utils.book_append_sheet(wb, surveillanceWS, 'Surveillance');
             
-            XLSX.writeFile(wb, 'sierra_leone_health_facilities_template.xlsx');
+            XLSX.writeFile(wb, 'regions_template.xlsx');
         }
 
         async function loadDataFromGitHub() {
@@ -852,7 +852,7 @@
                 const urlsToTry = [
                     defaultGitHubUrls.complete,
                     defaultGitHubUrls.alternative,
-                    'https://github.com/mohamedsillahkanu/health-facility-database/raw/main/sierra_leone_health_facilities_template.xlsx'
+                    'https://github.com/mohamedsillahkanu/health-facility-database/raw/main/regions_template.xlsx'
                 ];
                 
                 let workbook = null;
